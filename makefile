@@ -4,6 +4,8 @@ CPPFLAGS += -std=c++11 -W -Wall  -g
 CPPFLAGS += -O3
 CPPFLAGS += -I include
 
+LDLIBS += -lOpenCL
+
 ifeq ($(OS),Windows_NT)
 LDLIBS += -lws2_32
 else
